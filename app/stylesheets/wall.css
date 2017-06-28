@@ -1,0 +1,148 @@
+.left-box-1  {
+     width:  50%;
+     float:  left;
+ }
+
+.left-box-2  {
+     width:  50%;
+     float:  right;
+ }
+
+.left-box-btm  {
+     width:  100%;
+ }
+
+.left-box-1 img,  .left-box-2 img,  .left-box-btm img  {
+     width:  100%;
+ }
+
+.mid-box-1  {
+     width:  50%;
+     float:  left;
+ }
+
+.mid-box-2  {
+     width:  50%;
+     float:  right;
+ }
+
+.mid-box-1 img  {
+     width:  100%;
+     height:  100%;
+ }
+
+.mid-box-2 img  {
+     width:  100%;
+     height:  100%;
+ }
+
+.right-box-1  {
+     width:  100%;
+ }
+
+.right-box-2  {
+     width:  50%;
+     float:  left;
+ }
+
+.right-box-3  {
+     width:  50%;
+     float:  right;
+ }
+
+.right-box-3 img,  .right-box-2 img,  .right-box-1 img  {
+     width:  100%;
+ }
+
+.effects  {
+ }
+
+.effects .img  {
+     position:  relative;
+ }
+
+.effects .img img  {
+     display:  block;
+     margin:  0;
+     padding:  0;
+     max-width:  100%;
+     height:  auto;
+ }
+
+.overlay  {
+     z-index:  10 }
+a.close-overlay  {
+     display:  block;
+     position:  absolute;
+     top:  0;
+     right:  0;
+     z-index:  20;
+     width:  45px;
+     height:  45px;
+     font-size:  20px;
+     font-weight:  700;
+     color:  #fff;
+     line-height:  45px;
+     text-align:  center;
+     background-color:  #000;
+     cursor:  pointer;
+ }
+
+a.close-overlay.hidden  {
+     display:  none }
+.effects .overlay  {
+     position:  absolute;
+     display:  block;
+     top:  0;
+     bottom:  0;
+     left:  0;
+     right:  0;
+     opacity:  0;
+     -webkit-transition:  all 0.5s;
+     -moz-transition:  all 0.5s;
+     -ms-transition:  all 0.5s;
+     -o-transition:  all 0.5s;
+     transition:  all 0.5s;
+ }
+
+.effects .overlay a.expand  {
+     position:  absolute;
+     left:  0;
+     right:  0;
+     top:  0;
+     content:  "";
+     margin:  0 auto;
+     border-radius:  30px;
+     text-align:  center;
+     color:  #000;
+     line-height:  50px;
+     font-weight: 200;
+     font-size:  14px;
+     opacity:  0;
+     text-transform:  uppercase;
+     letter-spacing:  3px;
+     background:  url(../images/wall/go.png) no-repeat top center;
+     padding-top:  25px;
+     -webkit-transition:  all 0.5s;
+     -moz-transition:  all 0.5s;
+     -ms-transition:  all 0.5s;
+     -o-transition:  all 0.5s;
+     transition:  all 0.5s;
+     display:  block;
+ }
+
+.effects .img  {
+     overflow:  hidden }
+.effects .img.hover .overlay  {
+     opacity:  1 }
+.effects .img.hover .overlay a.expand  {
+     top:  50%;
+     margin-top:  -30px;
+     opacity:  1;
+ }
+
+.discover  {
+     background-color:  #282f35;
+     padding:  70px 0;
+     text-align:  center;
+ }

@@ -1,0 +1,114 @@
+---
+title: AO Creative Studio - Home
+_options:
+  layout: app/layouts/main.static.pug
+  partials:
+    - app/partials/index/_intro.static.pug
+    - app/partials/index/_projects_wall.static.pug
+---
+section.pagehead.intro-01.parallax
+  .container
+    .row
+      article.halfheight.text-left.col-md-6.col-md-offset-6
+  section.container.works-filter-wrap
+    .row
+      article.col-md-12.trans-dark.text-center
+        .works-filter-inner
+          ul.works-filter.clearfix
+            li
+              a#all.active.font5(href='#', data-filter='*')
+                span All
+            li
+              a(href='#', data-filter='.graphic-design')
+                span Graphic design
+            li
+              a(href='#', data-filter='.objects')
+                span Objects
+            li
+              a(href='#', data-filter='.scenography')
+                span Scenography
+            li
+              a(href='#', data-filter='.toys')
+                span Toys
+            li
+              a(href='#', data-filter='.interfaces')
+                span Interfaces
+section.works-container-wrap.offwhite-bg
+  section#works-container.works-container.container.white-bg.clearfix
+    .works-item.works-item-one-fourth.zoom.toys
+      img.img-responsive(alt='', title='', src='http://placehold.it/400x200')
+      a.venobox(data-gall='portfolio-gallery', href='#')
+        .works-item-inner.valign
+          h3.black Lightbox Images
+          p.white
+            span.black-bg Category
+    .works-item.works-item-one-half.info.graphic-design.toys
+      img.img-responsive(alt='', title='', src='http://placehold.it/400x600')
+      a(href='single-project.html')
+        .works-item-inner.valign
+          h3.black Project Info
+          p.white
+            span.black-bg Category
+    .works-item.works-item-one-fourth.zoom.toys
+      img.img-responsive(alt='', title='', src='http://placehold.it/400x200')
+      a.venobox(data-gall='portfolio-gallery', href='images/works/01.jpg')
+        .works-item-inner.valign
+          h3.black Lightbox Images
+          p.white
+            span.black-bg Category
+    .works-item.works-item-one-half.info.toys
+      img.img-responsive(alt='', title='', src='http://placehold.it/400x400')
+      a(href='single-project.html')
+        .works-item-inner.valign
+          h3.black Project Info
+          p.white
+            span.black-bg Category
+    .works-item.works-item-one-fourth.zoom.toys
+      img.img-responsive(alt='', title='', src='http://placehold.it/400x400')
+      a.venobox(data-gall='portfolio-gallery', href='http://placehold.it/400x400')
+        .works-item-inner.valign
+          h3.black Lightbox Images
+          p.white
+            span.black-bg Category
+    .works-item.large.works-item-one-fourth.zoom.toys.graphic-design.interfaces
+      img.img-responsive(alt='', title='', src='http://placehold.it/800x400')
+      a.venobox(data-gall='portfolio-gallery', href='http://placehold.it/400x400')
+        .works-item-inner.valign
+          h3.black Lightbox Images
+          p.white
+            span.black-bg Category
+    .works-item.works-item-one-half.info.logos.graphic-design.interfaces
+      img.img-responsive(alt='', title='', src='http://placehold.it/400x200')
+      a(href='single-project.html')
+        .works-item-inner.valign
+          h3.black Project Info
+          p.white
+            span.black-bg Category
+    .works-item.works-item-one-half.info.logos.ui
+      img.img-responsive(alt='', title='', src='http://placehold.it/400x200')
+      a(href='single-project.html')
+        .works-item-inner.valign
+          h3.black Project Info
+          p.white
+            span.black-bg Category
+    .works-item.works-item-one-fourth.zoom.branding.web
+      img.img-responsive(alt='', title='', src='http://placehold.it/400x400')
+      a.venobox(data-gall='portfolio-gallery', href='http://placehold.it/400x400')
+        .works-item-inner.valign
+          h3.black Lightbox Images
+          p.white
+            span.black-bg Category
+    .works-item.works-item-one-fourth.zoom.branding.web
+      img.img-responsive(alt='', title='', src='http://placehold.it/400x400')
+      a.venobox(data-gall='portfolio-gallery', href='http://placehold.it/400x400')
+        .works-item-inner.valign
+          h3.black Lightbox Images
+          p.white
+            span.black-bg Category
+    .works-item.works-item-one-half.info.logos.ui
+      img.img-responsive(alt='', title='', src='http://placehold.it/400x400')
+      a(href='single-project.html')
+        .works-item-inner.valign
+          h3.black Project Info
+          p.white
+            span.black-bg Category

@@ -1,0 +1,32 @@
+.intro-03-carousel-item{
+    height: 100%;
+}
+.intro-03 .inner-overlay{
+    background-color: rgba(0,0,0,0.05);
+}
+.intro-caption{
+    padding: 60px;
+}
+
+.intro h1{
+    margin-top: 20px;
+    font-size: 34px;
+    line-height: 49px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+.intro a.explore{
+    font-size: 18px;
+    line-height: 25px;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.intro-03-carousel-item{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
