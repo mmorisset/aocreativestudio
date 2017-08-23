@@ -1,0 +1,5 @@
+ErrorDocument 404 http://aocreativestudio.com/error.html
+AuthType Basic
+AuthName "restricted area"
+AuthUserFile /home/aocreatitj/www/staging/.htpasswd
+require valid-user
