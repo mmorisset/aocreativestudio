@@ -30,8 +30,8 @@
 }
 #toggle-menu span {
     display: block;
-    width: 30px;
-    height: 3px;
+    width: 25px;
+    height: 4px;
     position: absolute;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
@@ -60,7 +60,7 @@
     -webkit-animation: inBottom 0.8s forwards;
     -moz-animation: inBottom 0.8s forwards;
     animation: inBottom 0.8s forwards;
-}   
+}
 #toggle-menu.toggle-menu-hidden span.top {
     -webkit-animation: outTop 0.8s backwards;
     -webkit-animation-direction: reverse;
@@ -84,7 +84,7 @@
     -moz-animation-direction: reverse;
     animation: outBottom 0.8s backwards;
     animation-direction: reverse;
-}   
+}
 
 @-webkit-keyframes inMiddle {
     50% {

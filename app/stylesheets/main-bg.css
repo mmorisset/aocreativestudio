@@ -13,19 +13,19 @@
 /* INTRO / HOME VARIANTS */
 /*--------------------------------------------------------------*/
 .intro-01{
-	background-image: url('../images/clico_main_page.png');
+	background-image: url('../images/index/clico_main_page.png');
 }
 .intro-02{
 	background-image: url('http://placehold.it/1500x1067');
 }
 .intro-03-carousel-item-01{
-  background-image:url('../images/clico_main_page.png');
+  background-image:url('../images/index/clico_main_page.png');
 }
 .intro-03-carousel-item-02{
-  background-image:url('../images/clico_main_page.png');
+  background-image:url('../images/index/doll_pram_main_page.png');
 }
 .intro-03-carousel-item-03{
-  background-image:url('../images/clico_main_page.png');
+  background-image:url('../images/index/doll_furniture_main_page.png');
 }
 .intro-07-bg{
   background-image:url('http://placehold.it/1500x1067');
@@ -98,7 +98,7 @@
 	background-image:url('../images/poster.jpg') !important;
 }
 .mastnav{
-	background-image:url('http://placehold.it/2000x1360');
+	background-image:url('../images/header/menu.png');
 }
 .team-wall-bg{
 	background-image:url('http://placehold.it/1500x1067');

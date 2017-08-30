@@ -4,6 +4,8 @@ require 'colorize'
 require 'mixlib/versioning'
 require 'highline/import'
 require 'yaml'
+require 'ftp_sync'
+require 'pry'
 
 class Mixlib::Versioning::Format::SemVer
   # 1.8.3 is an internal version, with compatible changes & bugfixes only (not communicated)
@@ -18,14 +20,14 @@ task :default => :'build:development'
 namespace :release do
 
   # Upload every files in `dist`
-  FILES_TO_RELEASE = 'dist/**/*'
+  FILES_TO_RELEASE = 'public/**/*'
 
   SECRETS_FILE_PATH = 'secrets.yml'
 
   GITHUB_RELEASE_URL = 'https://github.com/mmorisset/aocreativestudio/releases/tag/%{version}'
 
-  PRODUCTION_URL_PREFIX = '//aocreativestudio.com'
-  STAGING_URL_PREFIX = '//aocreativestudio.com/staging'
+  PRODUCTION_URL_PREFIX = '/www'
+  STAGING_URL_PREFIX = '/www/staging'
 
   desc "Release SDK in staging"
   task :staging => :'build:staging' do
@@ -38,35 +40,25 @@ namespace :release do
   end
 
   def release(environment, url_prefix)
-    ensure_no_uncommited_changes!
-    # Brunch automatically adds sourcemap comments when generating sourcemap files.
-    # Since these files aren't served publicly alongside the sources, but rather sent explicitely
-    # (and privately) to Sentry to de-obfuscate error stacktraces, we want:
-    # - those comments stripped in the SDK snippet
-    # - `augment.(js|css).map` to be empty files (to avoid 404s in the browser)
-    modify_file_contents('dist/snippet.js') { |src| strip_sourcemaps_comments(src) }
-
-    # Here we ensure `augment.(js|css).map` are emptied before being deployed
-    %w( css js ).each do |ext|
-      modify_file_contents("dist/augment.#{ext}.map") { '' }
-    end
+    # ensure_no_uncommited_changes!
 
     puts
     puts "[ #{environment.upcase} RELEASE ]".yellow
     puts
 
     secret = YAML.load_file(SECRETS_FILE_PATH)
-
-    entries = Dir.glob('FILES_TO_RELEASE').sort
-    Net::FTP.open(secret.ftp_url, secret.username, secret.password) do |ftp|
-      entries.each do |name|
-        if File::directory?(name)
-          ftp.mkdir name
-        else
-          File.open(name) { |file| ftp.putbinaryfile(file, name) }
-        end
-      end
-    end
+    ftp = FtpSync.new secret['ftp_url'], secret['username'], secret['password']
+    ftp.verbose = true
+    ftp.push_dir 'public', url_prefix
+    # entries = Dir.glob(FILES_TO_RELEASE).sort
+    # Net::SFTP.start(secret['ftp_url'], secret['username'], :password => secret['password']) do |sftp|
+    #   entries.each do |name|
+    #     remote_path = name.gsub('public', url_prefix)
+    #     unless File::directory?(name)
+    #       sftp.upload!(name, remote_path)
+    #     end
+    #   end
+    # end
   end
 
   def modify_file_contents(filename)

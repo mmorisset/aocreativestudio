@@ -105,7 +105,7 @@ a.close-overlay.hidden  {
      transition:  all 0.5s;
  }
 
-.effects .overlay a.expand  {
+.effects .overlay a.expand {
      position:  absolute;
      left:  0;
      right:  0;
@@ -121,7 +121,6 @@ a.close-overlay.hidden  {
      opacity:  0;
      text-transform:  uppercase;
      letter-spacing:  3px;
-     background:  url(../images/wall/go.png) no-repeat top center;
      padding-top:  25px;
      -webkit-transition:  all 0.5s;
      -moz-transition:  all 0.5s;
@@ -130,6 +129,24 @@ a.close-overlay.hidden  {
      transition:  all 0.5s;
      display:  block;
  }
+
+.effects .overlay hr.expand {
+     position:  absolute;
+     left:  0;
+     size: 5px;
+     width: 50%;
+     top:  50px;
+     content:  "";
+     margin:  0 auto;
+     background-color:  #000;
+     padding-top:  25px;
+     -webkit-transition:  all 0.5s;
+     -moz-transition:  all 0.5s;
+     -ms-transition:  all 0.5s;
+     -o-transition:  all 0.5s;
+     transition:  all 0.5s;
+     display:  block;
+}
 
 .effects .img  {
      overflow:  hidden }

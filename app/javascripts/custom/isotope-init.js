@@ -10,9 +10,9 @@ require('imagesloaded');
   var isotope;
 
   $(document).on('click', '.works-filter li a', filterClicked);
-  $(window).on('resize', windowResized);
 
   utils.whenPageReadyIfExists('#works-container', function() {
+    $(window).on('resize', windowResized);
     var $container = $('.works-container');
 
     $container.imagesLoaded( function(){

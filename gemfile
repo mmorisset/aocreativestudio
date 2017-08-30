@@ -5,3 +5,11 @@ gem 'mimemagic'
 gem 'colorize'
 gem 'mixlib-versioning'
 gem 'highline'
+gem 'ftp_sync'
+
+gem 'pry', '~> 0.10'
+gem 'pry-rails'
+gem 'pry-doc'
+gem 'pry-byebug'
+gem 'pry-stack_explorer'
+gem 'stackprof', require: false
