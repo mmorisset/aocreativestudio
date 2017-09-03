@@ -97,8 +97,9 @@
 .poster-img{
 	background-image:url('../images/poster.jpg') !important;
 }
+
 .mastnav{
-	background-image:url('../images/header/menu.png');
+	background-color: white;
 }
 .team-wall-bg{
 	background-image:url('http://placehold.it/1500x1067');
