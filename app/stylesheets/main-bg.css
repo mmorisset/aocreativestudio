@@ -13,7 +13,7 @@
 /* INTRO / HOME VARIANTS */
 /*--------------------------------------------------------------*/
 .intro-01{
-	background-image: url('../images/index/clico_main_page.png');
+	background-image: url('../images/portfolio/triangle_main_page.png');
 }
 .intro-02{
 	background-image: url('http://placehold.it/1500x1067');
@@ -32,13 +32,6 @@
 }
 .intro-08-bg{
   background-image:url('http://placehold.it/1500x1067');
-}
-
-/*--------------------------------------------------------------*/
-/* CALL TO ACTIONS & SECTIONS */
-/*--------------------------------------------------------------*/
-.call-to-action-01{
-	background-image: url('../images/composition_main_page.png');
 }
 
 /*--------------------------------------------------------------*/

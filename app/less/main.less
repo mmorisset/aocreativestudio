@@ -191,6 +191,9 @@ h6 {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  ul {
+    margin-top: 80px;
+  }
 }
 .absolute-overlay {
   position: absolute;
@@ -277,7 +280,7 @@ h6 {
   }
 }
 .footlogo {
-  margin-top: 14px;
+  margin-top: 19px;
   a {
     &:hover {
       opacity: 1;
@@ -353,7 +356,8 @@ h6 {
   }
 }
 .call-to-action-inner {
-  padding: 100px 0;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 .subheading {
   font-size: 18px;
@@ -381,9 +385,8 @@ h6 {
   border-radius: 0px;
   text-decoration: none;
   padding: 15px 20px;
-  font-size: 12px;
+  font-size: 18px;
   line-height: 19px;
-  text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 1px;
   -webkit-transition: all .4s ease-in-out;
@@ -405,7 +408,6 @@ h6 {
   padding: 15px 20px;
   font-size: 18px;
   line-height: 25px;
-  text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 1px;
   -webkit-transition: all .4s ease-in-out;
@@ -425,11 +427,11 @@ h6 {
   }
 }
 .btn-nexus-dark {
-  border: solid 2px #000;
+  border: solid 4px #000;
   background: transparent;
   color: @color_1;
   &:hover {
-    border: solid 2px #000;
+    border: solid 4px #000;
     background: #000;
     color: @color_5;
   }
@@ -817,6 +819,7 @@ h6 {
         font-weight: 400;
         line-height: 27px;
         padding: 5px;
+        color: @black;
       }
     }
     &:hover {
@@ -830,7 +833,7 @@ h6 {
     }
     &:after {
       content: "//";
-      color: @color_5;
+      opacity: 1;
       font-size: 16px;
       font-weight: 200;
       line-height: 23px;
