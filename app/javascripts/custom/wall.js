@@ -5,9 +5,9 @@ $(document).ready(function() {
     $(".close-overlay").removeClass("hidden");
     // handle the adding of hover class when clicked
     $(".effects .img").click(function(e) {
-      e.preventDefault();
-      e.stopPropagation();
       if (!$(this).hasClass("hover")) {
+        e.preventDefault();
+        e.stopPropagation();
         $(this).addClass("hover");
       }
     });
