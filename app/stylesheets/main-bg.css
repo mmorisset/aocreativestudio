@@ -80,8 +80,11 @@
 /*--------------------------------------------------------------*/
 /* SINGLE PROJECT PAGE IMAGES */
 /*--------------------------------------------------------------*/
-.single-project-01{
+.ice-cream{
 	background-image: url('images/projects/ice_cream/icecream_header.png');
+}
+.cars{
+  background-image: url('images/projects/cars/car_header.png');
 }
 
 /*--------------------------------------------------------------*/
