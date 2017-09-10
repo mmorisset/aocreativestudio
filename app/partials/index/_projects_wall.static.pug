@@ -3,76 +3,20 @@ section#wall.wall.container-fluid
     #effect.effects.clearfix
       .col-md-4.left.nopadding
         .left-box-1
-          .img
-            img(alt='one', title='Duck and Chicken', src='images/index/duck_main_page_project.png')
-            .overlay.white-trans-bg
-              a.close-overlay.hidden
-                | x
-              .expand
-                a.font8(href='/') Pull Toy
-                hr
-                p.font7 Moover Toys
+          | {{>_project_item name='Pull Toy' brand='Mover Toys' url='images/index/duck_main_page_project.png'}}
         .left-box-2.box
-          .img
-            img(alt='one', title='Anderson', src='images/index/anderson_main_page_project.png')
-            .overlay.white-trans-bg
-              a.close-overlay.hidden
-                | x
-              .expand
-                a.font8(href='#') Andersen
-                hr
-                p.font7 Moover Toys
+          | {{>_project_item name='Andersen' brand='Mover Toys' url='images/index/anderson_main_page_project.png'}}
         .clearfix
         .left-box-btm.box
-          .img
-            img(alt='one', title='Clico', src='images/index/clico_main_page_project.png')
-            .overlay.white-trans-bg
-              a.close-overlay.hidden
-                | x
-              .expand
-                a.font8(href='#') Clico
-                hr
-                p.font7 [ao] creative studio
+          | {{>_project_item name='Clico' brand='[ao] creative studio' url='images/index/clico_main_page_project.png'}}
       .col-md-4.mid.nopadding
         .box
-          .img
-            img(alt='one', title='Ice cream', src='images/index/ice_cream_main_page_project.png')
-            .overlay.white-trans-bg
-              a.close-overlay.hidden
-                | x
-              .expand.double
-                a.font8(href='#') Ice Cream set
-                hr
-                p.font7 Moover Toys
+          | {{>_project_item name='Ice cream' brand='Moover Toys' url='images/index/ice_cream_main_page_project.png' expand='double'}}
         .clearfix
       .col-md-4.right.nopadding
         .right-box-1.box
-          .img
-            img(alt='one', title="Emile's wings", src='images/index/emile_wings_main_page_project.png')
-            .overlay.white-trans-bg
-              a.close-overlay.hidden
-                | x
-              .expand
-                a.font8(href='#') Les Ailes d'Emile
-                hr
-                p.font7 Hermès
+          | {{>_project_item name="Les Ailes d'Emile" brand='Hermès' url='images/index/emile_wings_main_page_project.png'}}
         .right-box-2.box
-          .img
-            img(alt='one', title='DE', src='images/index/de_main_page_project.png')
-            .overlay.white-trans-bg
-              a.close-overlay.hidden
-                | x
-              .expand
-                a.font8(href='#') DE
-                hr
-                p.font7 KTM Advance
+          | {{>_project_item name="DE" brand='KTM Advance' url='images/index/de_main_page_project.png'}}
         .right-box-3.box
-          .img.toto
-            img(alt='one', title='Furniture', src='images/index/doll_furniture_main_page_project.png')
-            .overlay.white-trans-bg
-              a.close-overlay.hidden
-                | x
-              .expand
-                a.font8(href='#') Furnitures
-                hr
-                p.font7 Moover Toys
+          | {{>_project_item name="Furnitures" brand='Moover Toys' url='images/index/doll_furniture_main_page_project.png'}}
