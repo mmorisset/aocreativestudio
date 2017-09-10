@@ -614,7 +614,6 @@ h6 {
   }
   h6 {
     font-size: 32px;
-    font-style: italic;
     font-weight: 200;
     line-height: 39px;
     >span {
@@ -651,16 +650,14 @@ h6 {
   }
   h6 {
     font-size: 32px;
-    font-style: italic;
     font-weight: 200;
     line-height: 39px;
     >span {
       font-size: 18px;
-      font-style: italic;
       font-weight: 200;
       line-height: 25px;
       &:before {
-        content: '/';
+        content: '//';
         color: @color_1;
         margin-left: 5px;
         margin-right: 5px;
@@ -668,6 +665,16 @@ h6 {
     }
   }
 }
+
+.news-post-body {
+  p {
+    font-size: 18px;
+  }
+  .inner-pad {
+    padding: 60px;
+  }
+}
+
 .thumb-title {
   position: absolute;
   width: 100%;
@@ -727,30 +734,30 @@ h6 {
   margin: 0 !important;
   padding: 0 !important;
   width: 33.3% !important;
-  a {
-    opacity: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    position: absolute;
-    top: 0;
-    z-index: 100;
-    text-align: center;
-    -webkit-transition: all .4s ease-in-out;
-    -moz-transition: all .4s ease-in-out;
-    -ms-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-    &:hover {
-      opacity: 1;
-      -webkit-transition: all .4s ease-in-out;
-      -moz-transition: all .4s ease-in-out;
-      -ms-transition: all .4s ease-in-out;
-      -o-transition: all .4s ease-in-out;
-      transition: all .4s ease-in-out;
-    }
-  }
+  // a {
+  //   opacity: 0;
+  //   display: block;
+  //   width: 100%;
+  //   height: 100%;
+  //   padding: 10px;
+  //   position: absolute;
+  //   top: 0;
+  //   z-index: 100;
+  //   text-align: center;
+  //   -webkit-transition: all .4s ease-in-out;
+  //   -moz-transition: all .4s ease-in-out;
+  //   -ms-transition: all .4s ease-in-out;
+  //   -o-transition: all .4s ease-in-out;
+  //   transition: all .4s ease-in-out;
+  //   &:hover {
+  //     opacity: 1;
+  //     -webkit-transition: all .4s ease-in-out;
+  //     -moz-transition: all .4s ease-in-out;
+  //     -ms-transition: all .4s ease-in-out;
+  //     -o-transition: all .4s ease-in-out;
+  //     transition: all .4s ease-in-out;
+  //   }
+  // }
 }
 .works-item.large {
   margin: 0 !important;

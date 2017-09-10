@@ -48,6 +48,7 @@ require('javascripts/custom/isotope-init.js');
     //Adjusting Intro Components Spacing based on detected screen resolution
     $('.fullheight, .intro').css('height',vH);
     $('.halfheight').css('height',vH/2);
+    $('.quartheight').css('height',vH/4);
 
     //Equi-heigh Divs
     $(document).ready(function() {

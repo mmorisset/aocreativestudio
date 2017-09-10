@@ -3,8 +3,15 @@ title: '[ao] creative studio - Portfolio'
 _options:
   layout: app/layouts/main.static.pug
   partials:
-    - app/partials/portfolio/_intro.static.pug
+    - app/partials/portfolio/_filters.static.pug
     - app/partials/portfolio/_works.static.pug
+    - app/partials/_project_item.static.pug
 ---
-| {{>_intro}}
-| {{>_works}}
+section.pagehead.intro-01.parallax
+  .wall.container-fluid.nopadding
+    .row
+      article.quartheight.text-left.col-md-6.col-md-offset-6
+      h2.font8.text-center
+        | projects
+    | {{>_filters}}
+    | {{>_works}}

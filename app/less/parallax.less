@@ -1,0 +1,20 @@
+/*this class will be activated on mobile devices in order to switch off the parallax effect*/
+.parallax-layer {
+  background: url('../images/bg/01.jpg') 50% 0 no-repeat fixed;
+}
+.parallax {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  &.cover {
+    background-size: cover;
+  }
+}
+.parallax-off {
+  background-attachment: scroll !important;
+  background-size: cover !important;
+}
+.no-parallax {
+  background-attachment: scroll !important;
+  background-size: cover !important;
+}
