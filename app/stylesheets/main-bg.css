@@ -80,11 +80,14 @@
 /*--------------------------------------------------------------*/
 /* SINGLE PROJECT PAGE IMAGES */
 /*--------------------------------------------------------------*/
-.ice-cream{
+.ice-cream {
 	background-image: url('images/projects/ice_cream/icecream_header.png');
 }
-.cars{
+.cars {
   background-image: url('images/projects/cars/car_header.png');
+}
+.doll-furnitures {
+  background-image: url('images/projects/doll_furnitures/doll_furniture_header.png');
 }
 
 /*--------------------------------------------------------------*/
