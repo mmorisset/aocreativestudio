@@ -1,14 +1,11 @@
 section.news-post-head
   .container-fluid
     .row
-      article.col-md-6.news-post-head-half.text-left(style={'background-color': '#e7545a'})
+      article.col-md-6.news-post-head-half.text-left(style={'background-color': '{{color}}'})
         .inner-pad
-          h2.white.font7
-            | become an ice cream seller, have fun and create your own ice cream
+          h2.white.font7 {{description}}
       article.col-md-6.news-post-head-half.text-left.white-bg
         .inner-pad
-          h6.font8.black
-            | Ice cream set
-            span.font7 Moover Toys
-          span.font7.black
-            | March 2016
+          h6.font8.black {{name}}
+            span.font7 {{brand}}
+          span.font7.black {{date}}
