@@ -3,23 +3,23 @@ title: '[ao] creative studio - Furnitures'
 _options:
   layout: app/layouts/main.static.pug
   partials:
+    - app/partials/project/_intro.static.pug
     - app/partials/project/_info.static.pug
     - app/partials/project/_thumbnail_item.static.pug
     - app/partials/project/_body.static.pug
     - app/partials/_all_projects.static.pug
 ---
-section.pagehead.doll-furnitures.parallax.cover.halfheight
+| {{>_intro url='images/projects/doll_furnitures/doll_furniture_header.png'}}
+
 | {{>_info color='#a3ddd7' description='play with your dolls and create stories' name='Furnitures' brand='Moover Toys' date='June 2017'}}
 
 section.project-thumbs
   section#thumb-carousel-wrap.inner-section.thumb-carousel-wrap
     #thumb-carousel.owl-carousel.owl-nav-sticky-wide
-      | {{>_thumbnail_item url='images/projects/doll_furnitures/doll_furniture1.png'}}
-      | {{>_thumbnail_item url='images/projects/doll_furnitures/doll_furniture2.png'}}
-      | {{>_thumbnail_item url='images/projects/doll_furnitures/doll_furniture3.png'}}
-      | {{>_thumbnail_item url='images/projects/doll_furnitures/doll_furniture4.png'}}
-      | {{>_thumbnail_item url='images/projects/doll_furnitures/doll_furniture5.png'}}
-      | {{>_thumbnail_item url='images/projects/doll_furnitures/doll_furniture6.png'}}
-      | {{>_thumbnail_item url='images/projects/doll_furnitures/doll_furniture6.png'}}
+      - var n = 1;
+      while n <= 6
+        | {{>_thumbnail_item url='images/projects/doll_furnitures/doll_furniture#{n++}.png'}}
+
 | {{>_body text='We created a range of dolls furnitures for the brand Moover toys. We wanted to bring simplicity and some freshness in this new range of product. From the first sketches to 3D, production drawing and first prototype, AO has down all the design process to bring this products to life.'}}
+
 | {{>_all_projects}}

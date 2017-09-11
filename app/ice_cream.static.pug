@@ -3,23 +3,23 @@ title: '[ao] creative studio - Ice cream set'
 _options:
   layout: app/layouts/main.static.pug
   partials:
+    - app/partials/project/_intro.static.pug
     - app/partials/project/_info.static.pug
     - app/partials/project/_thumbnail_item.static.pug
     - app/partials/project/_body.static.pug
     - app/partials/_all_projects.static.pug
 ---
-section.pagehead.ice-cream.parallax.cover.halfheight
+| {{>_intro url='images/projects/ice_cream/icecream_header.png'}}
+
 | {{>_info color='#e7545a' description='become an ice cream seller, have fun and create your own ice cream' name='Ice cream set' brand='Moover Toys' date='March 2016'}}
 
 section.project-thumbs
   section#thumb-carousel-wrap.inner-section.thumb-carousel-wrap
     #thumb-carousel.owl-carousel.owl-nav-sticky-wide
-      | {{>_thumbnail_item url='images/projects/ice_cream/icecream1.png'}}
-      | {{>_thumbnail_item url='images/projects/ice_cream/icecream2.png'}}
-      | {{>_thumbnail_item url='images/projects/ice_cream/icecream3.png'}}
-      | {{>_thumbnail_item url='images/projects/ice_cream/icecream4.png'}}
-      | {{>_thumbnail_item url='images/projects/ice_cream/icecream5.png'}}
-      | {{>_thumbnail_item url='images/projects/ice_cream/icecream6.png'}}
-      | {{>_thumbnail_item url='images/projects/ice_cream/icecream7.png'}}
+      - var n = 1;
+      while n <= 7
+        | {{>_thumbnail_item url='images/projects/ice_cream/icecream#{n++}.png'}}
+
 | {{>_body text='Moover company asks to [ao] creative studio to create an Ice cream set for children 3+ years old and more. Children will play to be a shopper and create many ice cream. This set consists of wooden blocks of different shapes and different colors, children will have fun to assemble it to create the most craziest ice cream ever.'}}
+
 | {{>_all_projects}}

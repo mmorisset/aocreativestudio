@@ -3,22 +3,23 @@ title: '[ao] creative studio - Cars'
 _options:
   layout: app/layouts/main.static.pug
   partials:
+    - app/partials/project/_intro.static.pug
     - app/partials/project/_info.static.pug
     - app/partials/project/_thumbnail_item.static.pug
     - app/partials/project/_body.static.pug
     - app/partials/_all_projects.static.pug
 ---
-section.pagehead.cars.parallax.cover.halfheight
+| {{>_intro url='images/projects/cars/car_header.png'}}
+
 | {{>_info color='#e59f19' description='play and create your own stories with the range of wooden cars' name='Cars' brand='Moover Toys' date='May 2015'}}
 
 section.project-thumbs
   section#thumb-carousel-wrap.inner-section.thumb-carousel-wrap
     #thumb-carousel.owl-carousel.owl-nav-sticky-wide
-      | {{>_thumbnail_item url='images/projects/cars/car1.png'}}
-      | {{>_thumbnail_item url='images/projects/cars/car2.png'}}
-      | {{>_thumbnail_item url='images/projects/cars/car3.png'}}
-      | {{>_thumbnail_item url='images/projects/cars/car4.png'}}
-      | {{>_thumbnail_item url='images/projects/cars/car5.png'}}
-      | {{>_thumbnail_item url='images/projects/cars/car6.png'}}
+      - var n = 1;
+      while n <= 6
+        | {{>_thumbnail_item url='images/projects/cars/car#{n++}.png'}}
+
 | {{>_body text='We conceived a range of wooden cars for children 3+ years old and more. Articulated around different stories, the bakery, ice cream shop or fire truck... Our approach attempts to create a new univers where kids could play and create his own. Cars has to be at the same time playful, funny and ergonomic for little child.'}}
+
 | {{>_all_projects}}
