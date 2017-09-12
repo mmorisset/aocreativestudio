@@ -3,28 +3,28 @@ require('imagesloaded');
 (function() {
   "use strict";
 
-  var CONTAINER_ELEMENT = '#works-container';
+  var CONTAINER_ELEMENT = '#projects-container';
 
   var utils = require('javascripts/custom/utils.js');
   var isotopeLayout = require('isotope-layout');
   var isotope;
 
-  $(document).on('click', '.works-filter li a', filterClicked);
+  $(document).on('click', '.projects-filters li a', filterClicked);
 
-  utils.whenPageReadyIfExists('#works-container', function() {
+  utils.whenPageReadyIfExists('#projects-container', function() {
     $(window).on('resize', windowResized);
-    var $container = $('.works-container');
+    var $container = $('.projects-container');
 
     $container.imagesLoaded( function(){
-      isotope = new isotopeLayout( '#works-container', {
-        itemSelector: '.works-item'
+      isotope = new isotopeLayout( '#projects-container', {
+        itemSelector: '.project-item'
       });
     });
   });
 
 
   function filterClicked(e) {
-    $('.works-filter li a').removeClass('active');
+    $('.projects-filter li a').removeClass('active');
     $(e.currentTarget).addClass('active');
 
     var selector = $(this).attr('data-filter');
@@ -33,7 +33,7 @@ require('imagesloaded');
   }
 
   function windowResized(e) {
-    isotope.arrange({ itemSelector: '.works-item' });
+    isotope.arrange({ itemSelector: '.project-item' });
   }
 
 })();

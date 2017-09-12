@@ -1,0 +1,92 @@
+@import "app/less/color";
+
+.project-info {
+  h2 {
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+  h3 {
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+  h6 {
+    font-size: 32px;
+    font-weight: 200;
+    line-height: 39px;
+    >span {
+      font-size: 18px;
+      font-weight: 200;
+      line-height: 25px;
+      &:before {
+        content: '//';
+        color: @black;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) and (max-width: 980px) and (max-width: 800px) and (max-width: 768px) {
+  .project-info {
+    h2 {
+      font-size: 24px;
+      line-height: 31px;
+    }
+    h6 {
+      font-size: 24px;
+      line-height: 31px;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) and (max-width: 600px) {
+  .project-info {
+    h2 {
+      font-size: 20px;
+      line-height: 27px;
+    }
+    h6 {
+      font-size: 20px;
+      line-height: 27px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .project-info {
+    h2 {
+      font-size: 20px;
+      line-height: 27px;
+    }
+    h6 {
+      font-size: 20px;
+      line-height: 27px;
+    }
+    .inner-pad {
+      padding: 60px 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 360px) and (max-width: 320px) {
+  .project-info {
+    h2 {
+      font-size: 16px;
+      line-height: 23px;
+    }
+    h6 {
+      font-size: 16px;
+      line-height: 23px;
+    }
+    .inner-pad {
+      padding: 60px 20px;
+    }
+  }
+}

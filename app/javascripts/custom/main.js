@@ -32,9 +32,6 @@ require('javascripts/custom/twitter-init.js');
 require('javascripts/custom/wall.js');
 require('javascripts/custom/isotope-init.js');
 
-
-
-
 (function(){
   "use strict";
 
@@ -65,30 +62,20 @@ require('javascripts/custom/isotope-init.js');
 
     //Mobile Menu (multi level)
     $('ul.slimmenu').slimmenu({
-        resizeWidth: '1200',
-        collapserTitle: 'menu',
-        easingEffect:'easeInOutQuint',
-        animSpeed:'medium',
+      resizeWidth: '1200',
+      collapserTitle: 'menu',
+      easingEffect:'easeInOutQuint',
+      animSpeed:'medium',
     });
 
     //Navigation Sub Menu Triggering
     $('.trigger-sub-nav').click(function(){
-        $('.sub-nav').slideUp('fast');
-        $('.trigger-sub-nav').find('.main-nav').removeClass('nav-highlight');
-        $(this).find('.main-nav').addClass('nav-highlight');
-        $(this).find('.sub-nav').slideDown('slow');
+      $('.sub-nav').slideUp('fast');
+      $('.trigger-sub-nav').find('.main-nav').removeClass('nav-highlight');
+      $(this).find('.main-nav').addClass('nav-highlight');
+      $(this).find('.sub-nav').slideDown('slow');
     })
-
-    $('.news-block').hover(function() {
-        $(this).addClass('show-img');
-        $(this).find('.news-block-inner').addClass('overlay-on');
-    }, function() {
-        $(this).removeClass('show-img');
-        $('.news-block-inner').removeClass('overlay-on');
-    });
-
   });
-
 })();
 
 

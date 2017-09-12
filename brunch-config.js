@@ -19,6 +19,9 @@ module.exports = {
     },
   },
   plugins: {
+    "less": {
+      dumpLineNumbers: 'comments'
+    },
     "static": {
       processors: [
         require('html-brunch-static')({

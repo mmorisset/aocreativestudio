@@ -16,7 +16,7 @@ $(window).on('load', function(){
 			    $('.equal-height').setAllToMaxHeight();
 			    $('.about-block').setAllToMaxHeight();
 			    $('.contact-block').setAllToMaxHeight();
-			    $('.news-post-head-half').setAllToMaxHeight();
+			    $('.project-info-half').setAllToMaxHeight();
         	}
 
 	   		else {
