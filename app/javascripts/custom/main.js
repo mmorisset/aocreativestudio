@@ -15,7 +15,6 @@ require('javascripts/libs/owl.carousel.js');
 require('javascripts/libs/pace.min.js');
 require('javascripts/libs/retina.js');
 require('javascripts/libs/smooth-scroll.js');
-require('javascripts/libs/venobox.min.js');
 require('javascripts/libs/wow.js');
 
 // require('javascripts/custom/bgvimeo-init.js');
@@ -30,7 +29,6 @@ require('javascripts/custom/parallax-init.js');
 require('javascripts/custom/service-slider-init.js');
 require('javascripts/custom/toggle-menu.js');
 require('javascripts/custom/twitter-init.js');
-require('javascripts/custom/venobox-init.js');
 require('javascripts/custom/wall.js');
 require('javascripts/custom/isotope-init.js');
 

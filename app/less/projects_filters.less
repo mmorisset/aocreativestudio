@@ -1,0 +1,57 @@
+@import "app/less/color";
+
+.projects-filters-inner {
+  padding: 30px;
+}
+
+.projects-filters {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  li {
+    display: inline-block;
+    -webkit-transition: all .8s ease-in-out;
+    -moz-transition: all .8s ease-in-out;
+    -ms-transition: all .8s ease-in-out;
+    -o-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+    a {
+      >span {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 27px;
+        padding: 5px;
+        color: @black;
+      }
+    }
+    &:hover {
+      cursor: pointer;
+      opacity: 0.4;
+      -webkit-transition: all .8s ease-in-out;
+      -moz-transition: all .8s ease-in-out;
+      -ms-transition: all .8s ease-in-out;
+      -o-transition: all .8s ease-in-out;
+      transition: all .8s ease-in-out;
+    }
+    &:after {
+      content: "//";
+      opacity: 1;
+      font-size: 16px;
+      font-weight: 200;
+      line-height: 23px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    a.active {
+      >span {
+        background: #fff;
+        color: @black;
+      }
+    }
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+  }
+}
