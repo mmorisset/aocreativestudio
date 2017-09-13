@@ -41,7 +41,7 @@ require('javascripts/custom/isotope-init.js');
     var vW = $(window).width();
 
     //Adjusting Intro Components Spacing based on detected screen resolution
-    $('.fullheight, .intro').css('height',vH);
+    $('.fullheight').css('height',vH);
     $('.halfheight').css('height',vH/2);
     $('.quartheight').css('height',vH/4);
 
