@@ -4,8 +4,9 @@ require 'colorize'
 require 'mixlib/versioning'
 require 'highline/import'
 require 'yaml'
-require 'ftp_sync'
+require 'syncftp'
 require 'pry'
+require 'logger'
 
 class Mixlib::Versioning::Format::SemVer
   # 1.8.3 is an internal version, with compatible changes & bugfixes only (not communicated)
@@ -40,25 +41,14 @@ namespace :release do
   end
 
   def release(environment, url_prefix)
-    # ensure_no_uncommited_changes!
 
     puts
     puts "[ #{environment.upcase} RELEASE ]".yellow
     puts
 
     secret = YAML.load_file(SECRETS_FILE_PATH)
-    ftp = FtpSync.new secret['ftp_url'], secret['username'], secret['password']
-    ftp.verbose = true
-    ftp.push_dir 'public', url_prefix
-    # entries = Dir.glob(FILES_TO_RELEASE).sort
-    # Net::SFTP.start(secret['ftp_url'], secret['username'], :password => secret['password']) do |sftp|
-    #   entries.each do |name|
-    #     remote_path = name.gsub('public', url_prefix)
-    #     unless File::directory?(name)
-    #       sftp.upload!(name, remote_path)
-    #     end
-    #   end
-    # end
+    ftp = SyncFTP.new( secret['ftp_url'], username: secret['username'], password: secret['password'], loglevel: Logger::INFO)
+    ftp.sync(local: 'public', remote: url_prefix)
   end
 
   def modify_file_contents(filename)

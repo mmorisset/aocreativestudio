@@ -5,7 +5,7 @@ gem 'mimemagic'
 gem 'colorize'
 gem 'mixlib-versioning'
 gem 'highline'
-gem 'ftp_sync'
+gem 'syncftp'
 
 gem 'pry', '~> 0.10'
 gem 'pry-rails'

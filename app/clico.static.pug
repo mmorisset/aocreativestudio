@@ -1,0 +1,25 @@
+---
+title: '[ao] creative studio - Clico'
+_options:
+  layout: app/layouts/main.static.pug
+  partials:
+    - app/partials/project/_intro.static.pug
+    - app/partials/project/_info.static.pug
+    - app/partials/project/_thumbnail_item.static.pug
+    - app/partials/project/_body.static.pug
+    - app/partials/_all_projects.static.pug
+---
+| {{>_intro url='images/projects/clico/clico_header.png'}}
+
+| {{>_info color='#34b4c7' description='empowered your creativity with an augmented reality game' name='Clico' brand='[ao]' date='June 2016'}}
+
+section.project-thumbs
+  section#thumb-carousel-wrap.inner-section.thumb-carousel-wrap
+    #thumb-carousel.owl-carousel.owl-nav-sticky-wide
+      - var n = 1;
+      while n <= 9
+        | {{>_thumbnail_item url='images/projects/clico/clico#{n++}.png'}}
+
+| {{>_body text='Clico is designed for children 5+ years old. With Clico, child can build a submarine, locomotive, helicopter, boat or rocket; and bring it to life thanks to a tablet app.This first introduction to augmented reality technology allows children to build bridges between the real and virtual worlds. Possibilities are endless, children can assemble whatever they desire: there are no limits on creativity!'}}
+
+| {{>_all_projects}}
