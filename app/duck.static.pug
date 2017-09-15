@@ -1,0 +1,25 @@
+---
+title: '[ao] creative studio - Pull toys'
+_options:
+  layout: app/layouts/main.static.pug
+  partials:
+    - app/partials/project/_intro.static.pug
+    - app/partials/project/_info.static.pug
+    - app/partials/project/_thumbnail_item.static.pug
+    - app/partials/project/_body.static.pug
+    - app/partials/_all_projects.static.pug
+---
+| {{>_intro url='images/projects/duck/duck_header.png'}}
+
+| {{>_info color='#fbdc0a' description='the perfect companions for any little one' name='Pull toys' brand='Moover Toys' date='October 2015'}}
+
+section.project-thumbs
+  section#thumb-carousel-wrap.inner-section.thumb-carousel-wrap
+    #thumb-carousel.owl-carousel.owl-nav-sticky-wide
+      - var n = 1;
+      while n <= 8
+        | {{>_thumbnail_item url='images/projects/duck/duck#{n++}.png'}}
+
+| {{>_body text='Pull toys are a range of wooden pull toys created for the brand Moover toys. This animals follow children in all their walks.'}}
+
+| {{>_all_projects}}
