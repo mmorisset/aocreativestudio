@@ -1,0 +1,25 @@
+---
+title: "[ao] creative studio - Les ailes d'Hemile"
+_options:
+  layout: app/layouts/main.static.pug
+  partials:
+    - app/partials/project/_intro.static.pug
+    - app/partials/project/_info.static.pug
+    - app/partials/project/_thumbnail_item.static.pug
+    - app/partials/project/_body.static.pug
+    - app/partials/_all_projects.static.pug
+---
+| {{>_intro url='images/projects/hermes/hermes_header.png'}}
+
+| {{>_info color='#59827b' description='play with lights and shadows and create your small play' name="Les ailes d'Emile" brand='Hermès' date='Januray 2015'}}
+
+section.project-thumbs
+  section#thumb-carousel-wrap.inner-section.thumb-carousel-wrap
+    #thumb-carousel.owl-carousel.owl-nav-sticky-wide
+      - var n = 1;
+      while n <= 8
+        | {{>_thumbnail_item url='images/projects/hermes/hermes#{n++}.png'}}
+
+| {{>_body text="Les ailes d'Emile is a suitcase which contains a small shadows theater. This game was concieved in partnership with Hermès. All elements and illustrations were designed on the theme of Emile Hermès' adventures and travels."}}
+
+| {{>_all_projects}}
