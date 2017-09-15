@@ -1,0 +1,25 @@
+---
+title: '[ao] creative studio - DE'
+_options:
+  layout: app/layouts/main.static.pug
+  partials:
+    - app/partials/project/_intro.static.pug
+    - app/partials/project/_info.static.pug
+    - app/partials/project/_thumbnail_item.static.pug
+    - app/partials/project/_body.static.pug
+    - app/partials/_all_projects.static.pug
+---
+| {{>_intro url='images/projects/dubai_expert/dubai_expert_header.png'}}
+
+| {{>_info color='#1a5467' description='discover the city of dubai & become an expert !' name='DE' brand='KTM Advance' date='January 2017'}}
+
+section.project-thumbs
+  section#thumb-carousel-wrap.inner-section.thumb-carousel-wrap
+    #thumb-carousel.owl-carousel.owl-nav-sticky-wide
+      - var n = 1;
+      while n <= 10
+        | {{>_thumbnail_item url='images/projects/dubai_expert/dubai_expert#{n++}.png'}}
+
+| {{>_body text='Dubai expert is a serious game developped by KTM Advance, It is an unique, fun and interactive training tool from Dubai Tourism to provide you with the expert knowledge. We conceived the user experience of the game and all the graphicals elements of the interface. We imagined the paper univers with the map of Dubai, all the illustrations of cards and the range of characters).'}}
+
+| {{>_all_projects}}
