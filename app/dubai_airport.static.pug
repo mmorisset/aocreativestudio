@@ -1,0 +1,25 @@
+---
+title: '[ao] creative studio - DA'
+_options:
+  layout: app/layouts/main.static.pug
+  partials:
+    - app/partials/project/_intro.static.pug
+    - app/partials/project/_info.static.pug
+    - app/partials/project/_thumbnail_item.static.pug
+    - app/partials/project/_body.static.pug
+    - app/partials/_all_projects.static.pug
+---
+| {{>_intro url='images/projects/dubai_airport/dubai_airport_header.png'}}
+
+| {{>_info color='#8c9c99' description='missing' name='DA' brand='KTM Advance' date='missing'}}
+
+section.project-thumbs
+  section#thumb-carousel-wrap.inner-section.thumb-carousel-wrap
+    #thumb-carousel.owl-carousel.owl-nav-sticky-wide
+      - var n = 1;
+      while n <= 2
+        | {{>_thumbnail_item url='images/projects/dubai_airport/dubai_airport#{n++}.png'}}
+
+| {{>_body text='missing'}}
+
+| {{>_all_projects}}
