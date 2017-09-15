@@ -1,0 +1,25 @@
+---
+title: '[ao] creative studio - Il Tabaro'
+_options:
+  layout: app/layouts/main.static.pug
+  partials:
+    - app/partials/project/_intro.static.pug
+    - app/partials/project/_info.static.pug
+    - app/partials/project/_thumbnail_item.static.pug
+    - app/partials/project/_body.static.pug
+    - app/partials/_all_projects.static.pug
+---
+| {{>_intro url='images/projects/opera_montpellier/opera_montpellier_header.png'}}
+
+| {{>_info color='#878685' description='watch & discover an opera' name='Decorator assistante' brand='Opera Montpellier' date='May 2016'}}
+
+section.project-thumbs
+  section#thumb-carousel-wrap.inner-section.thumb-carousel-wrap
+    #thumb-carousel.owl-carousel.owl-nav-sticky-wide
+      - var n = 1;
+      while n <= 13
+        | {{>_thumbnail_item url='images/projects/opera_montpellier/opera_montpellier#{n++}.png'}}
+
+| {{>_body text='We have been assistant of the Set Designer Fabien Teigné on the production of Il Tabarro / Royal Palace directed by Marie-Eve Signeyrole for The National Opera of Montpellier. Our task was to assist Fabien Teigné in the different steps of the conception of decors : models, sketches, and different works during the rehearsals until the opening night.'}}
+
+| {{>_all_projects}}
