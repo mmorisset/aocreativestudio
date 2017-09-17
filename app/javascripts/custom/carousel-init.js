@@ -14,6 +14,36 @@ require('owl.carousel');
 
     generateCarousel($("#thumb-carousel"), 2, true);
 
+    $("#partners-carousel").owlCarousel({
+      touchDrag: true,
+      mouseDrag: true,
+      nav: false,
+      loop: true,
+      responsiveRefreshRate: 1,
+      navText: ['',''],
+      autoplay: true,
+      responsive : {
+        0: {
+          items : 1,
+        },
+        480: {
+          items : 2,
+        },
+        768: {
+          items : 2,
+        },
+        800: {
+          items: 3,
+        },
+        980: {
+          items: 4,
+        },
+        1024: {
+          items: 4,
+        }
+      }
+    });
+
     function generateCarousel(element, items, navigation) {
       element.owlCarousel({
         items: items,

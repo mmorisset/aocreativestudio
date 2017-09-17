@@ -4,23 +4,23 @@ _options:
   layout: app/layouts/main.static.pug
   partials:
     - app/partials/_triangles.static.pug
+    - app/partials/_thumbnail_item.static.pug
 ---
 | {{>_triangles index_class='above changeable'}}
-.wall.container-fluid.nopadding
-  .row
-    article.quartheight.text-left.col-md-6.col-md-offset-6
-    h2.font8.text-center
-      | the studio
-    p.font7.text-center meet us and let's create together
-
-section#photo
-  .fullscreen-carousel.owl-carousel.owl-nav-sticky-wide.halfheight
-    .item.carousel-item.text-center.halfheight(style={'background-image': "url(images/about/studio1.png)"})
-
-section.news-post-head
-  .container-fluid
+.container-fluid.nopadding
+  section#intro
     .row
-      article.col-md-6.news-post-head-half.text-left
+      article.quartheight.text-left.col-md-6.col-md-offset-6
+      h2.font8.text-center
+        | the studio
+      p#meet-us.font7.text-center meet us and let's create together
+
+  section#photo
+    img.img-responsive(src='images/about/studio1.png')
+
+  section.about-head
+    .row
+      article.col-md-6.text-left
         .inner-pad.font7
           h2.black.font8 Who we are?
           p
@@ -29,36 +29,35 @@ section.news-post-head
             | Creating funny objects, imagining playfull stories, playing with materials, experimenting news uses and staying openminded to bring new ideas to life.
           p
             | From illustration to object, to scenography or interactive design, [ao] help you to realize your projects and bring you the best
-      article.col-md-6.news-post-head-half.text-center
+
+          p.font8.mail
+            | Contact us at
+            a(href='mailto:hello@creativestudio.com' target='blank')
+              |  hello@creativestudio.com
+
+      article.col-md-6.text-center
         .inner-pad
           .row
-            .col-sm-6.col-md-6
+            .col-xs-6
               img(src='images/about/pictogram4.png')
               p.font7 product design
-            .col-sm-6.col-md-6
+            .col-xs-6
               img(src='images/about/pictogram3.png')
               p.font7 illustration
           .row
-            .col-sm-6.col-md-6
+            .col-xs-6
               img(src='images/about/pictogram1.png')
               p.font7 interaction design
-            .col-sm-6.col-md-6
+            .col-xs-6
               img(src='images/about/pictogram2.png')
               p.font7 scenography
-section.news-post-head
-  .container-fluid
-    article.text-left
-      .inner-pad
-        h2.black.font8 Our partners
-        .row
-          .col-sm-1.col-md-1
-            img(src='images/about/orange@2x.png')
-          .col-sm-3.col-md-3
-            img(src='images/about/hermes@2x.png')
-          .col-sm-2.col-md-2
-            img(src='images/about/essec@2x.png')
-          .col-sm-3.col-md-3
-            img(src='images/about/opera_montpellier@2x.png')
-          .col-sm-2.col-md-2
-            img(src='images/about/apis@2x.png')
 
+  section.about-partners
+    .row
+      article.col-md-12.text-center
+        .inner-pad.font7.text-left
+          h2.black.font8 Our partners
+        #partners-carousel.owl-carousel.owl-nav-sticky-wide
+          - var n = 1;
+          while n <= 9
+            | {{>_thumbnail_item url='images/about/partners#{n++}.png'}}
