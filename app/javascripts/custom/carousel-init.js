@@ -17,6 +17,8 @@ require('owl.carousel');
       mouseDrag: true,
       nav: true,
       loop: true,
+      autoplay: true,
+      autoplayTimeout: 3000,
       responsiveRefreshRate: 1,
       navText: ['',''],
       responsive : {
