@@ -5,11 +5,10 @@ _options:
   partials:
     - app/partials/portfolio/_filters.static.pug
     - app/partials/portfolio/_projects.static.pug
+    - app/partials/_triangles.static.pug
     - app/partials/_project_item.static.pug
 ---
-section#intro.intro.intro-03.parallax.absolute-overlay.fullwidth
-  .fullscreen-carousel.owl-carousel.owl-nav-sticky-wide.fullheight
-    .item.carousel-item.triangle-background.text-center.fullheight
+| {{>_triangles index_class='below'}}
 .wall.container-fluid.nopadding
   .row
     article.quartheight.text-left.col-md-6.col-md-offset-6

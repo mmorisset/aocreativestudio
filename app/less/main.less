@@ -10,8 +10,12 @@
 @background_color_1: white;
 @background_color_2: rgba(0,0,0,0.5);
 
-.on-top {
-  z-index: 1;
+.above {
+  z-index: 100;
+}
+
+.below {
+  z-index: -1;
 }
 
 body {
@@ -292,7 +296,7 @@ h6 {
   height: 100%;
   width: 100%;
   z-index: 998;
-  background-color: @background_color_1;
+  background-color: transparent;
   background-size: cover;
   ul {
     list-style: none;
