@@ -5,7 +5,7 @@ _options:
   partials:
     - app/partials/project/_intro.static.pug
     - app/partials/project/_info.static.pug
-    - app/partials/project/_thumbnail_item.static.pug
+    - app/partials/_thumbnail_item.static.pug
     - app/partials/project/_body.static.pug
     - app/partials/_all_projects.static.pug
 ---
@@ -20,6 +20,6 @@ section.project-thumbs
       while n <= 7
         | {{>_thumbnail_item url='images/projects/ice_cream/icecream#{n++}.png'}}
 
-| {{>_body text='Moover company asks to [ao] creative studio to create an Ice cream set for children 3+ years old and more. Children will play to be a shopper and create many ice cream. This set consists of wooden blocks of different shapes and different colors, children will have fun to assemble it to create the most craziest ice cream ever.'}}
+| {{>_body text="Moover company asks us to create an ice cream set for children 3+ years old and more. Children will play to be a shopper and create many ice creams. This set consists of wooden blocks of different shapes and different colors, children will have fun to assemble it to create the most craziest ice cream ever. We've designed the product and the packaging."}}
 
 | {{>_all_projects}}

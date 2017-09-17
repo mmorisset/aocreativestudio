@@ -5,7 +5,7 @@ _options:
   partials:
     - app/partials/project/_intro.static.pug
     - app/partials/project/_info.static.pug
-    - app/partials/project/_thumbnail_item.static.pug
+    - app/partials/_thumbnail_item.static.pug
     - app/partials/project/_body.static.pug
     - app/partials/_all_projects.static.pug
 ---
@@ -20,6 +20,6 @@ section.project-thumbs
       while n <= 5
         | {{>_thumbnail_item url='images/projects/essec/essec#{n++}.png'}}
 
-| {{>_body text='The Business School ESSEC asks to [ao] creative studio to drive three groups of students in the conception of an app for their Final Project. We have made brainstorming, building scenario, thinking about personae, making mockup together. As mentors, we have help them to complete the UX design part of their app. [ao] made also the UI design of each project to taste the app as if it was real.'}}
+| {{>_body text="We drove three groups of students from ESSEC Business School in the conception of a service application for their Master final project. As mentors, we helped them to complete the UX part of their service and define the best application they need. We've built scenarii, defined personas, and made interactive mockups with them to test their service with users."}}
 
 | {{>_all_projects}}

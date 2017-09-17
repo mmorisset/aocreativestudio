@@ -5,7 +5,7 @@ _options:
   partials:
     - app/partials/project/_intro.static.pug
     - app/partials/project/_info.static.pug
-    - app/partials/project/_thumbnail_item.static.pug
+    - app/partials/_thumbnail_item.static.pug
     - app/partials/project/_body.static.pug
     - app/partials/_all_projects.static.pug
 ---
@@ -20,8 +20,6 @@ section.project-thumbs
       while n <= 9
         | {{>_thumbnail_item url='images/projects/chauffage_urbain/chauffage_urbain#{n++}.png'}}
 
-| {{>_body text='Urban heating is a pedagogical toy create and build by APIS, we imagined this game for European Sustainable Development Week.
-This game allows to understand the concept of heating in the city and make aware of the important of sustainable development. At the head
- of the control center the children are invited to start the factories and produce the quantities of heating and hot water needed.'}}
+| {{>_body text='Urban heating is a pedagogical toy create and build by APIS, we imagined this game for European Sustainable Development Week. This game allows to understand the concept of heating in the city and make aware of the important of sustainable development. At the head of the control center the children are invited to start the factories and produce the quantities of heating and hot water needed.'}}
 
 | {{>_all_projects}}

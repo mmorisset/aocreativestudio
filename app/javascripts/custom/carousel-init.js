@@ -12,7 +12,37 @@ require('owl.carousel');
       generateCarousel($(this), 1, true);
     });
 
-    generateCarousel($("#thumb-carousel"), 2, true);
+    $("#thumb-carousel").owlCarousel({
+      touchDrag: true,
+      mouseDrag: true,
+      nav: true,
+      loop: true,
+      responsiveRefreshRate: 1,
+      navText: ['',''],
+      responsive : {
+        0: {
+          items : 1,
+        },
+        480: {
+          items : 1,
+        },
+        768: {
+          items : 2,
+        },
+        800: {
+          items: 2,
+        },
+        980: {
+          items: 2,
+        },
+        1024: {
+          items: 2,
+        }
+      }
+    });
+
+
+
 
     $("#partners-carousel").owlCarousel({
       touchDrag: true,

@@ -5,13 +5,13 @@ _options:
   partials:
     - app/partials/project/_intro.static.pug
     - app/partials/project/_info.static.pug
-    - app/partials/project/_thumbnail_item.static.pug
+    - app/partials/_thumbnail_item.static.pug
     - app/partials/project/_body.static.pug
     - app/partials/_all_projects.static.pug
 ---
 | {{>_intro url='images/projects/dubai_airport/dubai_airport_header.png'}}
 
-| {{>_info color='#35909d' description='missing' name='DA' brand='KTM Advance' date='missing'}}
+| {{>_info color='#35909d' description='Play and learn with your mobile app' name='DA' brand='KTM Advance' date='February 2016'}}
 
 section.project-thumbs
   section#thumb-carousel-wrap.inner-section.thumb-carousel-wrap
@@ -20,6 +20,6 @@ section.project-thumbs
       while n <= 2
         | {{>_thumbnail_item url='images/projects/dubai_airport/dubai_airport#{n++}.png'}}
 
-| {{>_body text='missing'}}
+| {{>_body text="Conception of the user experience of a serious game and interface's graphical elements."}}
 
 | {{>_all_projects}}

@@ -5,7 +5,7 @@ _options:
   partials:
     - app/partials/project/_intro.static.pug
     - app/partials/project/_info.static.pug
-    - app/partials/project/_thumbnail_item.static.pug
+    - app/partials/_thumbnail_item.static.pug
     - app/partials/project/_body.static.pug
     - app/partials/_all_projects.static.pug
 ---
@@ -20,6 +20,6 @@ section.project-thumbs
       while n <= 6
         | {{>_thumbnail_item url='images/projects/doll_furnitures/doll_furniture#{n++}.png'}}
 
-| {{>_body text='We created a range of dolls furnitures for the brand Moover toys. We wanted to bring simplicity and some freshness in this new range of product. From the first sketches to 3D, production drawing and first prototype, AO has down all the design process to bring this products to life.'}}
+| {{>_body text='We created a range of dolls furnitures for the brand Moover toys. We wanted to bring simplicity and some freshness in this new range of product. From the first sketches to 3D, production drawing and first prototype, [ao] has down all the design process to bring this products to life.'}}
 
 | {{>_all_projects}}
