@@ -22,6 +22,7 @@ require('owl.carousel');
       responsiveRefreshRate: 1,
       navText: ['',''],
       autoplay: true,
+      autoplayTimeout: 3000,
       responsive : {
         0: {
           items : 1,
