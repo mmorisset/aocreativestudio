@@ -7,7 +7,6 @@ module.exports = {
       bootstrap: 'bootstrap-less'
     },
     styles: {
-      pace: ['public/pace.css']
     }
   },
   files: {

@@ -11,19 +11,15 @@ require('javascripts/libs/jquery.visible.js');
 require('javascripts/libs/modernizr.js');
 require('javascripts/libs/nova.parallax.js');
 require('javascripts/libs/okvideo.js');
-require('javascripts/libs/owl.carousel.js');
 require('javascripts/libs/pace.min.js');
 require('javascripts/libs/retina.js');
 require('javascripts/libs/smooth-scroll.js');
 require('javascripts/libs/wow.js');
 
-// require('javascripts/custom/bgvimeo-init.js');
-// require('javascripts/custom/bgyoutube-init.js');
+
 require('javascripts/custom/carousel-init.js');
 require('javascripts/custom/equalheights-init.js');
 require('javascripts/custom/form-validation.js');
-require('javascripts/custom/fullscreen-carousel-init.js');
-
 require('javascripts/custom/main.js');
 require('javascripts/custom/parallax-init.js');
 require('javascripts/custom/service-slider-init.js');
