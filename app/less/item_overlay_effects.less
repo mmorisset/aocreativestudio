@@ -47,10 +47,12 @@
         opacity: 1;
       }
       .expand.double {
-        .effects .img.hover .overlay .expand; top: 40%;
+        .effects .img.hover .overlay .expand;
+        top: 40%;
       }
       .expand.triple {
-        .effects .img.hover .overlay .expand; top: 70%;
+        .effects .img.hover .overlay .expand;
+        top: 70%;
       }
     }
   }
@@ -103,8 +105,81 @@ a.close-overlay.hidden {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 1024px) {
+  .effects .img.hover .overlay .expand.triple {
+    .effects .img.hover .overlay .expand;
+    top: 60%;
+  }
+  .effects .img.hover .overlay .expand.double {
+    top: 20%;
+  }
   .effects .img.hover .overlay .expand {
+    top: 20%;
+  }
+}
+
+@media (max-width: 980px) {
+  .effects .img.hover .overlay .expand.triple {
+    .effects .img.hover .overlay .expand;
+    top: 60%;
+  }
+  .effects .img.hover .overlay .expand.double {
+    top: 75%;
+  }
+  .effects .img.hover .overlay .expand {
+    top: 20%;
+  }
+}
+@media (max-width: 800px) {
+  .effects .img.hover .overlay .expand.triple {
+    .effects .img.hover .overlay .expand;
+    top: 60%;
+  }
+  .effects .img.hover .overlay .expand.double {
+    top: 70%;
+  }
+  .effects .img.hover .overlay .expand {
+    top: 20%;
+  }
+}
+@media (max-width: 768px) {
+  .effects .img.hover .overlay .expand.triple {
+    .effects .img.hover .overlay .expand;
+    top: 60%;
+  }
+  .effects .img.hover .overlay .expand.double {
+    top: 65%;
+  }
+  .effects .img.hover .overlay .expand {
+    top: 35%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .effects .img.hover .overlay .expand.triple {
+    .effects .img.hover .overlay .expand;
+    top: 60%;
+  }
+  .effects .img.hover .overlay .expand.double {
+    top: 60%;
+  }
+  .effects .img.hover .overlay .expand {
+    top: 20%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .effects .img.hover .overlay .expand.triple {
+    .effects .img.hover .overlay .expand;
+    top: 50%;
+  }
+  .effects .img.hover .overlay .expand.double {
+    top: 55%;
+  }
+  .effects .img.hover .overlay .expand {
+    top: 20%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .effects .img .overlay .expand {
     a {
       font-size: 14px;
     }
@@ -112,8 +187,39 @@ a.close-overlay.hidden {
       font-size: 14px;
     }
   }
-  .expand.triple {
-    .effects .img.hover .overlay .expand; top: 40%;
+  .effects .img.hover .overlay .expand.triple {
+    .effects .img.hover .overlay .expand;
+    top: 45%;
+  }
+  .effects .img.hover .overlay .expand.double {
+    top: 50%;
+  }
+  .effects .img.hover .overlay .expand {
+    top: 10%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .effects .img.hover .overlay .expand.triple {
+    .effects .img.hover .overlay .expand;
+    top: 20%;
+  }
+  .effects .img.hover .overlay .expand.double {
+    top: 20%;
+  }
+  .effects .img.hover .overlay .expand {
+    top: 20%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .effects .img.hover .overlay .expand.triple {
+    .effects .img.hover .overlay .expand;
+    top: 20%;
+  }
+  .effects .img.hover .overlay .expand.double {
+    top: 20%;
+  }
+  .effects .img.hover .overlay .expand {
+    top: 20%;
   }
 }
 
