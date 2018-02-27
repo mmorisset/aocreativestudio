@@ -1,0 +1,25 @@
+---
+title: '[ao] creative studio - Saka'
+_options:
+  layout: app/layouts/main.static.pug
+  partials:
+    - app/partials/project/_intro.static.pug
+    - app/partials/project/_info.static.pug
+    - app/partials/_thumbnail_item.static.pug
+    - app/partials/project/_body.static.pug
+    - app/partials/_all_projects.static.pug
+---
+| {{>_intro url='images/projects/saka/saka_header.png'}}
+
+| {{>_info color='#283245' description='innovate in the bike field' name='Saka' brand='Saka Team' date='Jan 2017'}}
+
+section.project-thumbs
+  section#thumb-carousel-wrap.inner-section.thumb-carousel-wrap
+    #thumb-carousel.owl-carousel.owl-nav-sticky-wide
+      - var n = 1;
+      while n <= 13
+        | {{>_thumbnail_item url='images/projects/saka/saka#{n++}.png'}}
+
+| {{>_body text="[ao] creative studio collaborates with an entrepreneur to create the SAKA project. We had the desire to think together about the use of the bag when you are biking. There are very few proposals on the market which combine functionality and aesthetics. We want to think about new solutions with an ethical and voluntary approach to facilitate biker's life."}}
+
+| {{>_all_projects}}
